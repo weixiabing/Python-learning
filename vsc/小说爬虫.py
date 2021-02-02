@@ -21,7 +21,7 @@ class downloader(object):
         html_doc=str(html,'gbk')
         div_bf = BeautifulSoup(html_doc) # 创建一个BeautifulSoup对象
         div = div_bf.find_all('div', id='list')
-        a_bf = BeautifulSoup(str(div[]))
+        a_bf = BeautifulSoup(str(div[0]))
         a =a_bf.find_all('a')
         self.nums=len(a[:])
         for each in a[:]:
