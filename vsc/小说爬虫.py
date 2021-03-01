@@ -15,7 +15,7 @@ class downloader(object):
 
     def __init__(self):
         self.server = 'http://www.biquge.cn/'
-        self.target = 'https://www.biquge.cn/book/36616/'
+        self.target = 'https://www.biquge.cn/book/13068/'
         self.names = []            #存放章节名
         self.urls = []            #存放章节链接
         self.nums = 0            #章节数
@@ -36,8 +36,8 @@ class downloader(object):
         div = div_bf.find_all('div', class_ = 'listmain')
         a_bf = BeautifulSoup(str(div[0]))
         a = a_bf.find_all('a')
-        self.nums = len(a[15:])                                #剔除不必要的章节，并统计章节数
-        for each in a[15:]:
+        self.nums = len(a[:])                                #剔除不必要的章节，并统计章节数
+        for each in a[:]:
             self.names.append(each.string)
             self.urls.append(self.server + each.get('href'))
 
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     dl.get_download_url()
     print('小说开始下载：')
     for i in range(dl.nums):
-        dl.writer(dl.names[i], '.txt', dl.get_contents(dl.urls[i]))
+        dl.writer(dl.names[i], '天道图书馆.txt', dl.get_contents(dl.urls[i]))
         sys.stdout.write("  已下载:%.3f%%" %  float(i/dl.nums) + '\r')
         sys.stdout.flush()
     print('小说下载完成')
