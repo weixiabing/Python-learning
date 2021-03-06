@@ -15,7 +15,7 @@ class downloader(object):
 
     def __init__(self):
         self.server = 'http://www.biquge.cn/'
-        self.target = 'https://www.biquge.cn/book/13068/'
+        self.target = 'https://www.biquge.cn/book/3770/'
         self.names = []            #存放章节名
         self.urls = []            #存放章节链接
         self.nums = 0            #章节数
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     dl.get_download_url()
     print('小说开始下载：')
     for i in range(dl.nums):
-        dl.writer(dl.names[i], '天道图书馆.txt', dl.get_contents(dl.urls[i]))
-        sys.stdout.write("  已下载:%.3f%%" %  float(i/dl.nums) + '\r')
+        dl.writer(dl.names[i], '九龙至尊.txt', dl.get_contents(dl.urls[i]))
+        sys.stdout.write("  已下载:%.3f%%" %  float(i/dl.nums*100) + '\r')
         sys.stdout.flush()
     print('小说下载完成')
