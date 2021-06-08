@@ -8,8 +8,8 @@ if a2=='y':
     else:
        print("不打折，价格为",a1)
 
-else:
+
     if a1>=200:
        print("打95折后的价格为",a1*0.95)
     else:
-       print("不打折，价格为",a1)     
+       print("不打折，价格为",a1)   
