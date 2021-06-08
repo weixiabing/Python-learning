@@ -47,5 +47,6 @@
     "files.autoGuessEncoding": true,
     "explorer.confirmDragAndDrop": false,
     "workbench.colorTheme": "Visual Studio Dark",
-    "team.showWelcomeMessage": false
+    "team.showWelcomeMessage": false,
+    "python.pythonPath": "C:\\Users\\weixi\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 }
