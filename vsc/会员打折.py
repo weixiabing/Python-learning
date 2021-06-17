@@ -7,7 +7,7 @@ if a2=='y':
        print("打9折后的价格为",a1*0.9) 
     else:
        print("不打折，价格为",a1)
-
+       print(666)
        print("sl")
       
        
