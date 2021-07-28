@@ -11,3 +11,4 @@ class Student:
         print(self.name,'的分数是：',self.score)
 a1=Student('li',18)
 a1.say_score()
+print(Student.count)

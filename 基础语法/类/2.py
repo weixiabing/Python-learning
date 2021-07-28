@@ -7,3 +7,5 @@ class Student:
     
 s1=Student('gaoqi',18)
 s1.say_score()
+print(dir(s1))
+print(s1.__dict__)
