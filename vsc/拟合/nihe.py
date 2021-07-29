@@ -1,5 +1,5 @@
 import xlrd
-import matplotlib.pyplot as plt
+import xlwt
 import numpy as np
 from xlrd import sheet
 sheetnum=int(input('请输入要计算的是第几张sheet（Excel左下角查看）的数字（从0开始）：'))
@@ -27,4 +27,12 @@ for j in range(ncols-1):
     v['xsn'+ str(j+1)]=[round(float(n),4) for n in v['xs'+ str(j+1)] if down<n< up]
 
 
-
+#写入
+#创建workbook和sheet对象
+workbook = xlwt.Workbook() #注意Workbook的开头W要大写
+sheet1 = workbook.add_sheet('sheet1',cell_overwrite_ok=True)
+for i in range(ncols-1):
+    #向sheet页中写入数据
+    for j in range(len(v['xsn'+ str(i+1)])):
+        sheet1.write(j,i,v['xsn'+ str(i+1)][j])
+workbook.save('result.xls')
