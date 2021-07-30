@@ -3,5 +3,6 @@
         "stdlib.h": "c",
         "time.h": "c",
         "cmath": "c"
-    }
+    },
+    "jupyter.jupyterServerType": "local"
 }
