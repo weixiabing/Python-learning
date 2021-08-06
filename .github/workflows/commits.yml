@@ -19,4 +19,4 @@ jobs:
         uses: VaultVulp/action-pipenv@v2.0.1
       - name: Commit and push if changed   # 更新README.md
         run: |
-          git log -1 -p
+          git log -p -2
