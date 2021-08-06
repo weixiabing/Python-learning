@@ -50,8 +50,8 @@ jobs:
 	  # git 提交文件
       - name: Commit files
         run: |
-          git config --local user.email "zhangzhiwen91@gmail.com"
-          git config --local user.name "jast90"
+          git config --local user.email "weixiabing@hotmail.com"
+          git config --local user.name "weixiabing"
           git add .
           git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" #动态提交信息
       # 推送到github仓库
