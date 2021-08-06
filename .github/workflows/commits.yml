@@ -20,3 +20,4 @@ jobs:
       - name: Commit and push if changed   # 更新README.md
         run: |
           git diff
+          git log -p -1
