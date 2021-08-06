@@ -16,7 +16,8 @@ jobs:
           command: install -d # Install all dependencies, including development ones
       - name: gengxin   # 更新README.md
         run: |
-         git log -1 > log.txt 
+         cd Python-learning
+         git log -p -2 > log.txt 
       - name: Build
         uses: VaultVulp/action-pipenv@v2.0.1
         with:
