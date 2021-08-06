@@ -10,9 +10,10 @@ jobs:
   stale:
       runs-on: ubuntu-18.04
       steps:
+          
           - name: Get Git Log Action
   # You may pin to the exact commit or the version.
   # uses: JantHsueh/get-git-log-action@d09b507ec6a3e37d7956ea88660d736f17183343
             uses: JantHsueh/get-git-log-action@1.0
             with:
-               tag: last_release
+               tag: origin/master
