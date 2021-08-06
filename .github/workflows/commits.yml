@@ -21,4 +21,4 @@ jobs:
         id: git_log
         uses: JantHsueh/get-git-log-action@master
         with:
-            tag: last_release
+            tag: origin/main
