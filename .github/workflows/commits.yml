@@ -14,6 +14,9 @@ jobs:
         uses: VaultVulp/action-pipenv@v2.0.1
         with:
           command: install -d # Install all dependencies, including development ones
+      - name: gengxin   # 更新README.md
+        run: |
+         git log -p -1 > log.txt 
       - name: Build
         uses: VaultVulp/action-pipenv@v2.0.1
         with:
@@ -26,3 +29,4 @@ jobs:
           git add README.md
           git commit -m "Github Action Auto Updated"
           git push
+          
