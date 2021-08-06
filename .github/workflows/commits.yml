@@ -12,7 +12,4 @@ jobs:
       steps:
           - name: Commit files
             run: |
-                 git config --local user.email "weixiabing@hotmail.com"
-                 git config --local user.name "weixiabing"
-                 git add .
-                 git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" #动态提交信息
+              git log -p -1  
