@@ -13,6 +13,7 @@ jobs:
           - name: Commit files
             run: |
               git init
-              gigit config --local user.email "weixiabing@hotmail.com"
-              git config --local user.name "weixiabing"t clone https://github.com/weixiabing/Python-learning.git
+              git config --local user.email "weixiabing@hotmail.com"
+              git config --local user.name "weixiabing"
+              gitt clone https://github.com/weixiabing/Python-learning.git
               git log -p -1  
