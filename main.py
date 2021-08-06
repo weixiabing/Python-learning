@@ -5,25 +5,13 @@ import re
 import pytz
 from datetime import datetime
 
-def get_link_info(feed_url, num):
+def get_link_info():
 
-    result = ""
-    feed = feedparser.parse(feed_url)
-    feed_entries = feed["entries"]
-    feed_entries_length = len(feed_entries)
-    all_number = 0;
+    with open (os.path.join(os.getcwd(), "log.txt"), 'r', encoding='utf-8') as f:
+        result = f.read()
 
-    if(num > feed_entries_length):
-        all_number = feed_entries_length
-    else:
-        all_number = num
     
-    for entrie in feed_entries[0: all_number]:
-        title = entrie["title"]
-        link = entrie["link"]
-        result = result + "\n" + "[" + title + "](" + link + ")" + "\n"
-    
-    return result
+return result
     
 
 
@@ -37,17 +25,16 @@ def main():
 
 
     
-    v2fy_info =  get_link_info("https://v2fy.com/feed/", 3)
+    v2fy_info =  get_link_info()
     print(v2fy_info)
-    fangyuanxiaozhan_info =  get_link_info("https://fangyuanxiaozhan.com/feed/", 3)
-    print(fangyuanxiaozhan_info)
+   
 
-    insert_info = v2fy_info + fangyuanxiaozhan_info
+     
 
     # 替换 ---start--- 到 ---end--- 之间的内容
     # pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日%H时M分')
     fmt = '%Y-%m-%d %H:%M:%S %Z%z'
-    insert_info = "---start---\n\n## zhaoolee（老法师昭昭）的每日更新(" + "更新时间:"+  datetime.fromtimestamp(int(time.time()),pytz.timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M:%S') + " | 本部分通过Github Actions抓取RSS自动更新, 无意中实现了自动刷绿墙...)" +"\n" + insert_info + "\n---end---"
+    insert_info = "---start---\n\n" + "更新时间:"+  datetime.fromtimestamp(int(time.time()),pytz.timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M:%S')+"\n" + v2fy_info + "\n---end---"
     # 获取README.md内容
     with open (os.path.join(os.getcwd(), "README.md"), 'r', encoding='utf-8') as f:
         readme_md_content = f.read()
