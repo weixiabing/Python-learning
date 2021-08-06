@@ -15,5 +15,5 @@ jobs:
               git init
               git config --local user.email "weixiabing@hotmail.com"
               git config --local user.name "weixiabing"
-              gitt clone https://github.com/weixiabing/Python-learning.git
+              git clone https://github.com/weixiabing/Python-learning.git
               git log -p -1  
