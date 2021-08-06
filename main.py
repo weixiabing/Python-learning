@@ -9,9 +9,7 @@ def get_link_info():
 
     with open (os.path.join(os.getcwd(), "log.txt"), 'r', encoding='utf-8') as f:
         result = f.read()
-
-    
-return result
+    return result
     
 
 
