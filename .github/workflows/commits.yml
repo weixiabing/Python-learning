@@ -12,4 +12,5 @@ jobs:
       steps:
           - name: Commit files
             run: |
+              git clone https://github.com/weixiabing/Python-learning.git
               git log -p -1  
