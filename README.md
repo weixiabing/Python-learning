@@ -15,19 +15,12 @@ Python的实战日记
 ```
 ---start---
 
-## zhaoolee（老法师昭昭）的每日更新(更新时间:2021-08-06 20:31:13 | 本部分通过Github Actions抓取RSS自动更新, 无意中实现了自动刷绿墙...)
+更新时间:2021-08-06 21:02:34
+commit e718f9014f19bf75c37ae092ac27530f29e2874b
+Author: Wei.Xiabing <weixiabing@hotmail.com>
+Date:   Fri Aug 6 21:01:45 2021 +0800
 
-[用计算md5的方法砍掉伪需求](https://v2fy.com/p/2021-08-06-md5-1628249145000/)
-
-[优质内容SEO指导建议, 黑客新闻指南中文版](https://v2fy.com/p/2021-08-05-hacker-news-1628126769000/)
-
-[知乎微信小程序广告真的猛的一塌糊涂](https://v2fy.com/p/2021-08-03-zhihu-1627956335000/)
-
-[试水谷歌星际尺度开源工具k8s一手体验](https://fangyuanxiaozhan.com/p/2021-07-28-17-23-37-k8s/)
-
-[理工男生资源达人的梦想,树莓派低成本创造私人专属互联网的构想](https://fangyuanxiaozhan.com/p/2021-07-21-10-02-55-pi/)
-
-[知识是免费的，若想快速掌握，需要金钱的加持](https://fangyuanxiaozhan.com/p/2021-07-16-09-53-55-serve/)
+    Update commits.yml
 
 ---end---
 ```
