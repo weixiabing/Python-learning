@@ -15,12 +15,12 @@ Python的实战日记
 ```
 ---start---
 
-更新时间:2021-08-06 21:13:06
-commit 8c4ab5f9357a61666361527e67db059069da6b44
-Author: Wei.Xiabing <weixiabing@hotmail.com>
-Date:   Fri Aug 6 21:12:18 2021 +0800
+更新时间:2021-08-06 21:22:05
+commit 5a1be3c22c12100e36a7d4a9e0939946efa4175f
+Author: weixiabing <weixiabing@hotmail.com>
+Date:   Fri Aug 6 21:21:12 2021 +0800
 
-    Update diary.md
+    Merge branch 'main' of github.com:weixiabing/Python-learning
 
 ---end---
 ```
