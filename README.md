@@ -15,15 +15,12 @@ Python的实战日记
 ```
 ---start---
 
-更新时间:2021-08-07 19:24:56
-commit bc61d838da3dc7204018008f731c770d18bd664d
-Author: weixiabing <weixiabing@hotmail.com>
-Date:   Sat Aug 7 19:23:57 2021 +0800
-   schedule:
--  - cron: '59 23 * * *'
-+    - cron: '0/30 * * * *'
+更新时间:2021-08-08 00:53:52
+commit 1f6e6d4bdfdb124ef0eefcf68893b6531acc9267
+Author: Wei.Xiabing <weixiabing@hotmail.com>
+Date:   Sun Aug 8 00:52:48 2021 +0800
 
-    1
+    Update README.md
 
 ---end---
 ```
