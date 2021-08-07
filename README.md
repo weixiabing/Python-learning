@@ -19,6 +19,9 @@ Python的实战日记
 commit bc61d838da3dc7204018008f731c770d18bd664d
 Author: weixiabing <weixiabing@hotmail.com>
 Date:   Sat Aug 7 19:23:57 2021 +0800
+   schedule:
+-  - cron: '59 23 * * *'
++    - cron: '0/30 * * * *'
 
     1
 
