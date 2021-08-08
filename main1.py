@@ -40,7 +40,7 @@ def get_link_info():
             print(num)
             id = item.find('td', class_="td-01 ranktop").get_text()
             print(id)
-            f.write('| '+id+'\t|'+title+"\t|"+num+'|<br>\n ')
+            f.write('| '+id+'\t|'+title+"\t|"+num+'|\n ')
     with open (os.path.join(os.getcwd(), "weibohotnews.txt"), 'r', encoding='utf-8') as f:
         result = f.read()
     return result
@@ -66,7 +66,7 @@ def main():
     # 替换 ---start--- 到 ---end--- 之间的内容
     # pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日%H时M分')
     fmt = '%Y-%m-%d %H:%M:%S %Z%z'
-    insert_info = "---开始---\n\n" + "更新时间:"+  datetime.fromtimestamp(int(time.time()),pytz.timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M:%S')+"github action更新<br>\n" + v2fy_info + "\n---结束---"
+    insert_info = "---开始---\n\n" + "更新时间:"+  datetime.fromtimestamp(int(time.time()),pytz.timezone('Asia/Shanghai')).strftime('%Y-%m-%d %H:%M:%S')+"github action更新<br>\n" +'|  序号   | 关键字  |热度|\n|  ----  | ----  |----|\n'+ v2fy_info + "\n---结束---"
     # 获取README.md内容
     with open (os.path.join(os.getcwd(), "README.md"), 'r', encoding='utf-8') as f:
         readme_md_content = f.read()
