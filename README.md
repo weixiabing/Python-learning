@@ -18,13 +18,79 @@ Python的实战日记
  ``` diff
 ---start---
 
-更新时间:2021-08-08 11:59:23linux远程更新
-commit 7b8ee70d884eb3f5f00d3a1902602734a101c170
-Merge: 5ad0d77 bb12aca
-Author: “weixiabing” <weixiabing@hotmail.com>
-Date:   Sun Aug 8 11:59:14 2021 +0800
+更新时间:2021-08-08 12:00:01linux远程更新
+commit a250cc55e828d3940d8901983c64d48975919879
+Author: weixiabing <weixiabing@hotmail.com>
+Date:   Sun Aug 8 11:59:23 2021 +0800
 
-    Merge branch 'main' of github.com:weixiabing/Python-learning into main
+    Github Action Auto Updated
+
+diff --git a/README.md b/README.md
+index 9ff0594..46ed323 100644
+--- a/README.md
++++ b/README.md
+@@ -18,55 +18,15 @@ Python的实战日记
+  ``` diff
+ ---start---
+ 
+-更新时间:2021-08-08 11:47:51linux远程更新
+-commit e8e45912da93f3d8ddd5b5008b625d29d972e057
++更新时间:2021-08-08 11:59:23linux远程更新
++commit 7b8ee70d884eb3f5f00d3a1902602734a101c170
++Merge: 5ad0d77 bb12aca
+ Author: “weixiabing” <weixiabing@hotmail.com>
+-Date:   Sun Aug 8 11:47:07 2021 +0800
++Date:   Sun Aug 8 11:59:14 2021 +0800
+ 
+-    1
++    Merge branch 'main' of github.com:weixiabing/Python-learning into main
+ 
+-diff --git a/Pipfile b/Pipfile
+-index ef3021d..fd4178d 100644
+---- a/Pipfile
+-+++ b/Pipfile
+-@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
+- verify_ssl = true
+- 
+- [scripts]
+--build = "cd auto-get&python main1.py"
+-+build = "python main1.py"
+- 
+- [dev-packages]
+- 
+-diff --git a/auto-get/log.txt b/auto-get/log.txt
+-deleted file mode 100644
+-index 9f33b4a..0000000
+---- a/auto-get/log.txt
+-+++ /dev/null
+-@@ -1,137 +0,0 @@
+--commit 4aab921dc10fd71ec0ddb2771515e4a14634b29b
+--Author: “weixiabing” <weixiabing@hotmail.com>
+--Date:   Sun Aug 8 11:21:19 2021 +0800
+--
+--    1
+--
+--diff --git a/main1.py b/main1.py
+--index a93111b..ec37a9e 100644
+----- a/main1.py
+--+++ b/main1.py
+--@@ -40,7 +40,7 @@ def get_link_info():
+--             print(num)
+--             id = item.find('td', class_="td-01 ranktop").get_text()
+--             print(id)
+---            f.write('| '+id+'	|'+title+"	|"+num+'|<br>
+- ')
+--+            f.write('| '+id+'	|'+title+"	|"+num+'|
+- ')
+--     with open (os.path.join(os.getcwd(), "weibohotnews.txt"), 'r', encoding='utf-8') as f:
+--         result = f.read()
+--     return result
+--@@ -66,7 +66,7 @@ def main():
+--     # 替换 ---start--- 到 ---end--- 之间的内容
++---end--- 之间的内容
+ -     # pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日%H时M分')
+ -     fmt = '%Y-%m-%d %H:%M:%S %Z%z'
+ --    insert_info = "---开始---
 
 ---end--- 之间的内容
 -     # pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日%H时M分')
