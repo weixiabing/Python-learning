@@ -19,6 +19,9 @@ jobs:
         uses: VaultVulp/action-pipenv@v2.0.1
         with:
           command: run build
+      - name: gengxin   # 更新README.md
+        run: |
+        git log -1>log.txt
       - name: Commit and push if changed   # 更新README.md
         run: |
           git diff
