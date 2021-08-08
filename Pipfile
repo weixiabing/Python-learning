@@ -12,7 +12,6 @@ build = "python /auto-get/main1.py"
 requests = "2.25.1"
 feedparser = "6.0.2"
 pytz = "2020.5"
-requests="2.26.0"
 lxml="4.6.3"
 bs4="0.0.1"
 [requires]
