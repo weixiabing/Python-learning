@@ -152,7 +152,7 @@ index 1defe43..a5156d6 100644
 
 
 <details>
-<summary>Click for GitHub Stats</summary>
+<summary>Click for 微博热点榜</summary>
 
 
 </p>
