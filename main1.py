@@ -40,7 +40,7 @@ def get_link_info():
             print(num)
             id = item.find('td', class_="td-01 ranktop").get_text()
             print(id)
-            f.write(id+'\t'+title+"\t"+num+'\n')
+            f.write('+ '+id+'\t'+title+"\t"+num+'<br>\n ')
     with open (os.path.join(os.getcwd(), "weibohotnews.txt"), 'r', encoding='utf-8') as f:
         result = f.read()
     return result
