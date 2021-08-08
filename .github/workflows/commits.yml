@@ -14,20 +14,13 @@ jobs:
         uses: VaultVulp/action-pipenv@v2.0.1
         with:
           command: install -d # Install all dependencies, including development ones
-<<<<<<< HEAD
       - name: gengxin   # 更新README.md
         run: |
-         git log -2 > log.txt 
-=======
-      
->>>>>>> 2a4e867e04eff189fa7758e077aa2eb09ac0d7d1
+         git log -1 > log.txt 
       - name: Build
         uses: VaultVulp/action-pipenv@v2.0.1
         with:
           command: run build
-      - name: gengxin   # 更新README.md
-        run: |
-        git log -1>log.txt
       - name: Commit and push if changed   # 更新README.md
         run: |
           git diff
