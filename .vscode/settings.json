@@ -4,5 +4,5 @@
         "time.h": "c",
         "cmath": "c"
     },
-    "jupyter.jupyterServerType": "remote"
+    "jupyter.jupyterServerType": "local"
 }
