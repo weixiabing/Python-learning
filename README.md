@@ -11,6 +11,12 @@ Python的实战日记
 + [vsc](https://github.com/weixiabing/Python-learning/tree/main/vsc)
 + [基础语法](https://github.com/weixiabing/Python-learning/tree/main/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95)
 + [数据结构与算法](https://github.com/weixiabing/Python-learning/tree/main/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95)
+## 建议
+- Make English as your working language. （让英语成为你的工作语言）
+- Practice makes perfect. （熟能生巧）
+- All experience comes from mistakes. （所有的经验都源于你犯过的错误）
+- Don't be one of the leeches. （不要当伸手党）
+- Either outstanding or out. （要么出众，要么出局）
 ## git更新日志
 <details>
 <summary>Click for git log更新日志</summary>
