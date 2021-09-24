@@ -3,8 +3,8 @@
 from bs4 import BeautifulSoup
 import requests
 if __name__ == "__main__":
-     server = 'http://www.biquge.cn/'
-     target = 'https://www.biquge.cn/book/34387/'
+     server = 'http://www.b520.cc/'
+     target = 'http://www.b520.cc/147_147614/'
      req = requests.get(url = target) 
      html = req.text
      div_bf = BeautifulSoup(html)
