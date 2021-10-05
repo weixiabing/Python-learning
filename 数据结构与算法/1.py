@@ -7,4 +7,4 @@ for a in range(1001):
                 print('a,b,c:',a,b,b)
 end_time=time.time()
 print('所用时间：',(end_time-start_time))
-print(1)
+print(12)
