@@ -14,5 +14,7 @@ feedparser = "6.0.2"
 pytz = "2020.5"
 lxml="4.6.3"
 bs4="0.0.1"
+matplotlib = "*"
+
 [requires]
 python_version = "3.9"
