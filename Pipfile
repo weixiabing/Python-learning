@@ -15,6 +15,7 @@ pytz = "2020.5"
 lxml="4.6.3"
 bs4="0.0.1"
 matplotlib = "*"
+fsspec = "*"
 
 [requires]
 python_version = "3.9"
