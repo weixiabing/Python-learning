@@ -16,3 +16,4 @@ turtle.goto(x4,y4)
 #距离
 distance=math.sqrt((x1-x4)**2+(y1-y4)**2)
 turtle.write(distance)
+turtle.done()
