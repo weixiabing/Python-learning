@@ -23,10 +23,10 @@ void DestroyQueue(SqQueue *&q)
 
 bool QueueEmpty(SqQueue *q)
 {
- return (q->front==q->rear);
+ return length==0;
 }
 
-//入队列
+//入队列，使用length判断队列是否已满
 bool enQueue(SqQueue *&q,ElemType e)
 {
     if(length==MaxSize)
@@ -35,6 +35,7 @@ bool enQueue(SqQueue *&q,ElemType e)
     q->rear=(q->rear+1)%MaxSize;
     length++;
     return true;
+
 }
 //出队列
 bool deQueue(SqQueue *&q,ElemType &e)

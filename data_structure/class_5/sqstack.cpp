@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
-#define MaxSize 50
+#define MaxSize 5
 typedef char ElemType;
 typedef struct {
     ElemType data[MaxSize];
