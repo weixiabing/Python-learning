@@ -1,0 +1,19 @@
+clear,clc,close all
+x1=[2,1,1,2];
+x2=[1,-1,-1,1];
+y1=circonvtim(x1,x2,4)
+y2=circonvtim(x2,x1,7)
+y3=circonvtim(x1,x2,8)
+ylin=conv(x1,x2)
+subplot(4,1,1);
+stem(y1,'.');
+title("y_1[n]=x_1[n]④x_2[n]");
+subplot(4,1,2);
+stem(y2,'.');
+title("y_2[n]=x_2[n]⑦x_1[n]");
+subplot(4,1,3);
+stem(y3,'.');
+title("y_3[n]=x_1[n]⑧x_2[n]");
+subplot(4,1,4);
+stem(ylin,'.');
+title("y_[n]=x_1[n]*x_2[n]");
