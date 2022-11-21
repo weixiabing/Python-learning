@@ -29,9 +29,5 @@ title('系统函数H(e^j^w)幅度特性曲线')
 xlabel('归一化频率')
 ylabel('幅度')
 
-%求h[n]的表达式
-syms z n
-h=iztrans((1+0.9*z^(-1))/(1-0.9*z^(-1)),n)
-
 
 
