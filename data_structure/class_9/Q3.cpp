@@ -1,5 +1,4 @@
 #include "travsal.cpp"
-
 int main(){
     AdjGraph *G;
     int A[MAXV][MAXV] = {
@@ -13,8 +12,9 @@ int main(){
     int n = 6, e = 10;
     CreateAdj(G,A, n, e);
    //用广度优先遍历的方法，找出顶点4到顶点1的路径并输出该路径
-    printf("深度优先(递归)遍历顶点4到顶点1的路径序列为：\n");
-    BFS(G, 4);
+    printf("广度优先(递归)遍历路径序列为：\n");
+    BFS1(G, 4,1);
+    printf("\n");
     DestroyAdj(G);
     return 0;
 

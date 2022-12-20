@@ -68,4 +68,29 @@ void BFS(AdjGraph *G, int v)
 }
 
 
-    
+  void BFS1(AdjGraph *G, int v,int h)
+{ //从顶点v出发广度优先遍历图g
+    ArcNode *p;
+    int Q[MAXV], front = -1, rear = -1, w, i;
+    for (i = 0; i < G->n; i++)
+        visited[i] = 0;
+    printf("%3d", v);visited[v]=1;
+    Q[++rear] = v;
+    while (front != rear)
+    {
+        w = Q[++front];
+        p = G->adjlist[w].firstarc;
+        while (p != NULL)
+        {
+            if (!visited[p->adjvex])
+            {
+                printf("%3d", p->adjvex);visited[p->adjvex]=1;
+                Q[++rear] = p->adjvex;
+                if(p->adjvex==h)
+                    return;
+            }
+            p = p->nextarc;
+        }
+    }
+    printf("\n");
+}
