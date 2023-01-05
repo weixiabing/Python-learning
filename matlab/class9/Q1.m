@@ -15,7 +15,7 @@ tr_width=ws-wp;
 N=ceil(12*pi/tr_width)+1;
 wc=(wp+ws)/2;
 h=fir1(N,wc/pi,hann(N+1));
-[Hr,w]=Hr_type1(h);
+[H,w]=freqz(h,1,1000);
 mag=abs(H);db=20*log10(mag/max(mag));
 subplot(2,1,1);
 plot(w/pi,db,'-b','LineWidth',1);
