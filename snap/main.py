@@ -33,11 +33,18 @@ if __name__ == '__main__':
     #读取cards_dict.json文件
     cards_dict=function.load_cards_dict()
     #读取已获得和未获得卡池
-    get_image_command_list=['get_image_StarterCard','get_image_pool-1','get_image_pool-2','get_image_pool-3',
-    'get_image_pool-4','get_image_pool-5','get_image_lv1-14','get_image_season1','get_image_season4','get_image_season5']
-    if command in get_image_command_list:
+    get_cards_command_list=['get_cards_StarterCard','get_cards_pool-1','get_cards_pool-2','get_cards_pool-3',
+    'get_cards_pool-4','get_cards_pool-5','get_cards_lv1-14','get_cards_season1','get_cards_season4','get_cards_season5']
+    if command in get_cards_command_list:
         pool=command.split('_')[-1]
         acquired_cards,unacquired_cards=function.load_pool_cards(data,cards_dict,pool)
+        ext=output_file.split('.')[-1]
+        if ext==('png'or 'jpg'or 'jpeg'or 'webp'or 'bmp'):
+            function.image_merge(acquired_cards,unacquired_cards,pool,output_file)#合成图片 
+        elif ext=='json':
+            function.save_json(pool,acquired_cards,unacquired_cards,output_file)
+    elif command=='count_cards':
+        function.count_cards(data, cards_dict)
     
-    #合成图片
-    function.image_merge(acquired_cards,unacquired_cards,pool,output_file)
+    
+    
