@@ -24,6 +24,8 @@ python main.py -c `<command>` -i <input_file> -o <output_file>
 
 `get_cards_season5`获取第5赛季卡牌情况
 
+count_cards 统计所有池子的信息
+
 2和3赛季无新卡
 
 <input_file>  CollectionState.json文件的位置
