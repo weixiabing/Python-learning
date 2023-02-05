@@ -1,33 +1,27 @@
-# main.py命令详解
+# Command-Line Utility to Parse Data and Visualize Results
 
-python main.py -c `<command>` -i <input_file> -o <output_file>
+## Description
+This is a Python-based command-line utility to parse data and visualize the results. The input data is read from a JSON file, and the output can be saved as a JSON file or image file. 
 
-`<comoand>  `
+## Usage
+main.py -c <command> -i <input_file> -o <output_file>
+or 
+main.py --command=<command> --input_file=<input_file> --output_file=<output_file>
 
-`get_cards_StarterCard   获取初始卡情况`
+## Options
+-h, --help : Show the usage of the command-line utility.
+-c, --command : Specify the command to run, including "get_cards_StarterCard", "get_cards_pool-1", "get_cards_pool-2", "get_cards_pool-3", "get_cards_pool-4", "get_cards_pool-5", "get_cards_lv1-14", "get_cards_season1", "get_cards_season4", "get_cards_season5", "count_cards".
+-i, --input_file : Specify the input file in JSON format.
+-o, --output_file : Specify the output file, either in JSON format or image format (png, jpg, jpeg, webp, bmp).
 
-`get_cards _pool-1  	获取1池情况`
+## Example
+main.py -c get_cards_pool-1 -i data.json -o pool-1.png
+or 
+main.py --command=get_cards_pool-1 --input_file=data.json --output_file=pool-1.png
 
-`get_cards _pool-2	获取2池情况`
+## Dependencies
+The following dependencies are required to run the command-line utility:
+- Python 3.x
+- getopt
+- function (a custom module for data parsing and visualization)
 
-`get_cards _pool-3	获取3池情况`
-
-`get_cards _pool-4	获取4池情况`
-
-`get_cards _pool-5	获取5池情况`
-
-`get_cards _lv1-14	获取1-14级卡牌情况`
-
-`get_cards_season1`获取第一赛季卡牌情况
-
-`get_cards_season4`获取第4赛季卡牌情况
-
-`get_cards_season5`获取第5赛季卡牌情况
-
-count_cards 统计所有池子的信息
-
-2和3赛季无新卡
-
-<input_file>  CollectionState.json文件的位置
-
-<output_file>   输出文件的位置，可选json和png格式 json文件中 分为已获得和未获得，对3池的未获得进行细分为3池核心卡必锁，非绝对核心的套路卡和其他卡
