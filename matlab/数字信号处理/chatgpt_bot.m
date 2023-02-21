@@ -2,7 +2,7 @@ prompt = 'What is your question?\n'; % 提示用户输入问题
 input_text = input(prompt,'s'); % 从命令行读取用户输入
 
 url = 'https://api.openai.com/v1/engines/text-davinci-002/completions'; % OpenAI API的URL
-api_key = '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'; % OpenAI API的密钥
+api_key = ''; % OpenAI API的密钥
 max_tokens = 20; % 最大生成的令牌数
 
 % 构造请求头
