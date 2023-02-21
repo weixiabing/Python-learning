@@ -1,0 +1,71 @@
+{
+    "api": {
+      "services": [
+        "HandlerService",
+        "LoggerService",
+        "StatsService"
+      ],
+      "tag": "api"
+    },
+    "dns": {
+        "servers": [
+          "https+local://1.1.1.1/dns-query",
+          "localhost"
+        ]
+      },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 62789,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "127.0.0.1"
+        },
+        "tag": "api"
+      }
+    ],
+    "outbounds": [
+        {
+            "tag": "direct",
+            "protocol": "freedom"
+        },
+        {
+            "tag": "block",
+            "protocol": "blackhole"
+        }
+    ],
+    "policy": {
+      "system": {
+        "statsInboundDownlink": true,
+        "statsInboundUplink": true
+      }
+    },
+    "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+    
+          {
+            "type": "field",
+            "ip": [
+              "geoip:private" 
+            ],
+            "outboundTag": "block" 
+          },
+          {
+        
+            "type": "field",
+            "ip": ["geoip:cn"],
+            "outboundTag": "block"
+          },
+         
+          {
+            "type": "field",
+            "domain": [
+              "geosite:category-ads-all" 
+            ],
+            "outboundTag": "block" 
+          }
+        ]
+    },
+    "stats": {}
+  }
