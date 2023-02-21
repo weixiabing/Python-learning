@@ -1,19 +1,17 @@
 # Python-learning
-
 <img src="https://i.giphy.com/media/LMt9638dO8dftAjtco/200.webp" width="100"><br><br>
 
-## 说明
+# Introduction
+This repository is mainly used to store the code learned during classes, not limited to Python but also includes Matlab, C language, and more.
 
-git克隆命令推荐使用：``git clone git@github.com:weixiabing/Python-learning.git````<br>``
-仅供学习参考使用，请于下载后的 24 小时内删除，本人不对使用过程中出现的任何问题负责
+# Suggestions
++ Make English your working language.
++ Practice makes perfect.
++ All experience comes from mistakes.
++ Don't be a leech.
++ Be outstanding or be out.
+# Note
+This repository is for learning and reference only. Please delete it within 24 hours after downloading. I am not responsible for any problems that may occur during the use of this repository.
 
-## 简介
-
-
-## 建议
-
-- Make English as your working language. （让英语成为你的工作语言）
-- Practice makes perfect. （熟能生巧）
-- All experience comes from mistakes. （所有的经验都源于你犯过的错误）
-- Don't be one of the leeches. （不要当伸手党）
-- Either outstanding or out. （要么出众，要么出局）
+# How to Use
+It is recommended to use the command git clone git@github.com:weixiabing/Python-learning.git to clone the repository.
