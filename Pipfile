@@ -1,21 +1,17 @@
 [[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
+url = "https://mirrors.aliyun.com/pypi/simple/"
 verify_ssl = true
-
-[scripts]
-build = "python main.py"
-
-[dev-packages]
+name = "pypi"
 
 [packages]
-requests = "2.25.1"
-feedparser = "6.0.2"
-pytz = "2020.5"
-lxml="4.6.3"
-bs4="0.0.1"
+numpy = "*"
+scipy = "*"
 matplotlib = "*"
-fsspec = "*"
+ipykernel = "*"
+scikit-learn = "*"
+pandas = "*"
+
+[dev-packages]
 
 [requires]
 python_version = "3.8"
